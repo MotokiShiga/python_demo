@@ -13,5 +13,5 @@ classifier = classifier.fit(iris.data, iris.target)
 with open('dt_graph.dot', 'w') as file_out:
     file_out = tree.export_graphviz(classifier, out_file=file_out)
 
-#### To output into a pdf file, run a command by Graphviz
+#### To output into a pdf file, run a Graphviz command:
 # > dot -Tpdf dt_graph.dot -o dt_graph.pdf 
